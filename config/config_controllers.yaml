@@ -1,0 +1,70 @@
+
+
+# Robot name goes here
+third_assembly: 
+  # default controller
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Controller 1
+  c1: # change the name
+    type: effort_controllers/JointEffortController
+    joint: j1 # Name of the joint.  
+  # Controller 2
+  c2: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j2 # Name of the joint.  
+  # Controller 3
+  c3: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j3 # Name of the joint.
+  c4: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j4 # Name of the joint.
+  c5: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j5 # Name of the joint.
+  c6: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j6 # Name of the joint.
+  c7: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j7 # Name of the joint.
+  c8: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j8 # Name of the joint.
+  c9: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j9 # Name of the joint.
+  c10: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: j10 # Name of the joint.
+  c11: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: g1l # Name of the joint.
+  c12: # change the name
+    type: effort_controllers/JointEffortController #Type of controller. 
+    joint: g2l # Name of the joint.  
+  
+  gazebo_ros_control:
+    pid_gains:
+        j1: { p: 100.0, i: 0.1, d: 10.0 }
+        j2: { p: 100.0, i: 0.1, d: 10.0 }
+        j3: { p: 100.0, i: 0.1, d: 10.0 }
+        j4: { p: 100.0, i: 0.1, d: 10.0 }
+        j5: { p: 100.0, i: 0.1, d: 10.0 }
+        j6: { p: 100.0, i: 0.1, d: 10.0 }
+        j7: { p: 100.0, i: 0.1, d: 10.0 }
+        j8: { p: 100.0, i: 0.1, d: 10.0 }
+        j9: { p: 100.0, i: 0.1, d: 10.0 }
+        j10: { p: 100.0, i: 0.1, d: 10.0 }
+        g1l: { p: 100.0, i: 0.1, d: 10.0 }
+        g2l: { p: 100.0, i: 0.1, d: 10.0 }    
+
+
+  # ....
+  # Controller n
+
+
+ 
